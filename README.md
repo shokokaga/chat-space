@@ -14,8 +14,10 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
+|user|integer|null: false, foreign_key: true|
 |post|text||
 |image|binary||
+|group|integer|null: false|
 
 ### Association
 - belongs_to :user

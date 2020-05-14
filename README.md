@@ -14,10 +14,10 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|integer|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
 |post|text||
-|image|binary||
-|group|integer|null: false|
+|image|text||
+|group|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -37,8 +37,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user|integer|null: false, foreign_key: true|
-|group|integer|null: false, foreign_key: true|
+|user|reference|null: false, foreign_key: true|
+|group|reference|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :group

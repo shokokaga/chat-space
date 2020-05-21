@@ -4,12 +4,10 @@
       .tops__topname
         masa
       .tops__topicons
-        .tops__topicons__iconleft
-          = link_to "#" do
-            = icon('fas','edit')
-        .tops__topicons__iconright
-          = link_to "#" do
-            = icon('fas','cog')
+        = link_to "#" , class: "iconleft" do
+          = icon('fas','edit')
+        = link_to "#" , class: "iconright" do
+          = icon('fas','cog')
   .side__grouplist
     .group
       .group__name

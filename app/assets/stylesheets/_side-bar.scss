@@ -11,8 +11,6 @@
   &__grouplist {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
-    // padding: 0 20px;
-    // overflow: scroll;
   }
 }
 
@@ -30,10 +28,10 @@
     justify-content: end;
     color: #ffffff;
 
-    &__iconleft {
+    .iconleft {
       margin-left: 5px;
     }
-    &__iconright {
+    .iconright {
       margin-left: 5px;
     }
   }

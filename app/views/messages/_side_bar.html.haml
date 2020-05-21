@@ -1,13 +1,18 @@
 .side
   .side__username
-    .side__username__topitems
-      .side__username__topitems__name
+    .tops
+      .tops__topname
         masa
-      .side__username__topitems__icons
-        .side__username__topitems__iconleft
+      .tops__topicons
+        .tops__topicons__iconleft
           = link_to "#" do
             = icon('fas','edit')
-        .side__username__topitems__iconright
+        .tops__topicons__iconright
           = link_to "#" do
             = icon('fas','cog')
-  .groups
+  .side__grouplist
+    .group
+      .group__name
+        TECHCAMP
+      .group__message
+        まだメッセージはありません

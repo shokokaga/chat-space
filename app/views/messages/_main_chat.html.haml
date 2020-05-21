@@ -1,5 +1,31 @@
-.chat-main
-  .chat-main__group-info
-  .chat-main__message-list
-  .chat-main__message-form
-    
+.main
+  .rightheader
+    .rightheader__group
+      .rightheader__group__groupname
+        Lunch会
+      .rightheader__group__memberlist
+        Member：
+        .rightheader__group__memberlist__member
+          shoko
+    .rightheader__editbutton
+      Edit
+
+  .messagefield
+    .box
+      .box__info
+        .box__info__username
+          Eri
+        .box__info__date
+          2020年05月19日 10時35分
+      .box__message
+        .box__message__content
+          パスタランチ
+
+  .form
+    %form.new__message
+      .input-box
+        %input{type:"text",class:"input-box__text",placeholder:"type a message"}
+        %label{class:"input-box__image"}
+          = icon('fas', 'image')
+          %input{type:"file",class:"input-box__image__file"}
+      %input{type:"submit",class:"submit-btn"}

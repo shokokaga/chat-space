@@ -55,7 +55,7 @@
         display: flex;
 
         &__username {
-          color: #434a54;
+          color: $color-main;
           font-size: 16px;
           font-weight: bold;
         }
@@ -69,7 +69,7 @@
         margin-top: 12px;
 
         &__content {
-          color: #434a54;
+          color: $color-main;
           font-size: 14px;
         }
       }
@@ -91,7 +91,7 @@
         &__text {
           height: 50px;
           width: 100%;
-          color: #434a54;
+          color: $color-main;
           border-style: none;
           padding: 0 40px 0 10px;
         }

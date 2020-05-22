@@ -2,7 +2,7 @@
   width: calc(100vw - 300px);
 
   .rightheader {
-    background-color: #ffffff;
+    background-color: $shiro;
     height: 100px;
     padding: 0 40px;
     border-bottom: solid 1px #eee;
@@ -42,7 +42,7 @@
   }
 
   .messagefield {
-    background-color: #fafafa;
+    background-color: $shiro;
     box-sizing: border-box;
     padding: 35px 40px 0;
     height: calc(100vh - 100px - 90px);
@@ -119,7 +119,7 @@
         padding: 0 30px;
         margin-left: 15px;
         background-color: $mizuiro;
-        color: white;
+        color: $shiro;
         cursor: pointer;
       }
     }

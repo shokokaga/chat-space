@@ -1,0 +1,16 @@
+.side
+  .side__username
+    .tops
+      .tops__topname
+        = current_user.name
+      .tops__topicons
+        = link_to "#" , class: "iconleft" do
+          = icon('fas','edit')
+        = link_to edit_user_path(current_user) , class: "iconright" do
+          = icon('fas','cog')
+  .side__grouplist
+    .group
+      .group__name
+        TECHCAMP
+      .group__message
+        まだメッセージはありません

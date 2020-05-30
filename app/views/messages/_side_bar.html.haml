@@ -2,11 +2,11 @@
   .side__username
     .tops
       .tops__topname
-        masa
+        = current_user.name
       .tops__topicons
         = link_to "#" , class: "iconleft" do
           = icon('fas','edit')
-        = link_to "#" , class: "iconright" do
+        = link_to edit_user_path(current_user) , class: "iconright" do
           = icon('fas','cog')
   .side__grouplist
     .group

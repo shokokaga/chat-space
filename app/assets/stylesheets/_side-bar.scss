@@ -1,5 +1,5 @@
 .side {
-  color: #fff;
+  color:$shiro;
   width: 300px;
   &__username {
     background-color: #253141;
@@ -26,7 +26,7 @@
   &__topicons {
     display: flex;
     justify-content: end;
-    color: #ffffff;
+    color: $shiro;
 
     .iconleft {
       margin-left: 5px;
@@ -38,12 +38,18 @@
 }
 
 .fas {
-  color: white;
+  color: $shiro;
 }
 
 .group {
   box-sizing: border-box;
   padding: 20px;
+
+  a{
+    text-decoration: none;
+    color:$shiro;
+  }
+
   &__name {
     font-size: 15px;
   }

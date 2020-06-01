@@ -2,31 +2,24 @@
   .rightheader
     .rightheader__group
       .rightheader__group__groupname
-        Lunch会
+        = @group.name
       .rightheader__group__memberlist
         Member：
         .rightheader__group__memberlist__member
-          shoko
+          - @group.group_users.each do |group_user|
+            = group_user.user.name
     .rightheader__editbutton
-      = link_to "#" do
+      = link_to edit_group_path(@group.id) do
         Edit
 
   .messagefield
-    .box
-      .box__info
-        .box__info__username
-          Eri
-        .box__info__date
-          2020年05月19日 10時35分
-      .box__message
-        .box__message__content
-          パスタランチ
+    = render @messages
 
   .form
-    %form.new__message
+    = form_with model: [@group, @message], local: true do |f|
       .input-box
-        %input{type:"text",class:"input-box__text",placeholder:"type a message"}
-        %label{class:"input-box__image"}
-          = icon('fas', 'image')
-          %input{type:"file",class:"input-box__image__file"}
-      %input{type:"submit",class:"submit-btn"}
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'

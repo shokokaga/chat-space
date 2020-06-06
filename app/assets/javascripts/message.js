@@ -57,10 +57,12 @@ $(function(){
       $('.messagefield').append(html);
       $('form')[0].reset();
       $('.messagefield').animate({ scrollTop: $('.messagefield')[0].scrollHeight});
-      $('.submit-btn').prop("disabled", false);
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
-    });
+    })
+    .always(function() {
+      $('.submit-btn').prop("disabled", false);
+    })
   });
 });
